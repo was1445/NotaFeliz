@@ -1,0 +1,97 @@
+body {
+    background-color: black; 
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.cuerpo {
+    margin: 50px auto;
+    max-width: 1500px;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #000;
+    border: 2px solid pink;
+    box-shadow: 0 0 20px pink;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    z-index: 1;
+}
+
+.asd {
+  margin-top: 20px;
+
+}
+
+.imagen {
+  float: right;
+  width: 300;
+  height: 300;
+  margin-top: 50px;
+  position: relative;
+  animation: brillo 2s infinite alternate;
+  overflow: hidden;
+  border: 3px solid pink;
+  box-shadow: 0 0 15px pink, 0 0 30px pink;
+  clip-path: polygon;
+  }
+
+  .imagen img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @keyframes brillo {
+    0% {
+      box-shadow: 0 0 10px pink;
+    }
+    100% {
+      box-shadow: 0 0 30px pink, 0 0 60px pink;
+    }
+  }
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000; /* Puedes cambiar el fondo */
+}
+
+.corazon {
+  position: absolute;
+  top: -10px;
+  color: #ff4da6;
+  font-size: 20px;
+  animation: caer 5s linear infinite;
+}
+
+@keyframes caer {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.chair {
+  opacity: 0;
+  animation: appear 0.05s forwards;
+
+}
+
+@keyframes appear {
+  to {opacity: 1;}
+
+}
